@@ -1,0 +1,728 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO8PqaUGXqO5K0yluWFpLo0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cmeniru/Aurelia-/blob/master/dphi-bootcamp\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "b5eWYScjIJl5",
+        "colab_type": "code",
+        "outputId": "0936fc5f-cd16-4cab-96e3-694226c11074",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 153
+        }
+      },
+      "source": [
+        "print(\"Hello World\")\n",
+        "print(5+7)\n",
+        "print(2-3)\n",
+        "height = 1.68\n",
+        "weight = 58\n",
+        "bmi = weight / height ** 2\n",
+        "print(bmi)\n",
+        "type(bmi)\n",
+        "a = \"Hello, World!\"\n",
+        "print(a[1])\n",
+        "print(a[7:12])\n",
+        "x = \"I love working \"\n",
+        "y = \"with python\"\n",
+        "z = x + y\n",
+        "print(z)\n",
+        "print(len(z))\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello World\n",
+            "12\n",
+            "-1\n",
+            "20.549886621315196\n",
+            "e\n",
+            "World\n",
+            "I love working with python\n",
+            "26\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5e8D4ZfP7m2J",
+        "colab_type": "code",
+        "outputId": "a38f8f4a-ac06-4966-efc6-0e22840821b7",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        }
+      },
+      "source": [
+        "x = int(input(\"Enter a number: \"))\n",
+        "print(x)\n",
+        "type(x)\n",
+        "print(x ** 2)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 29\n",
+            "29\n",
+            "841\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DFYeblIs-R-M",
+        "colab_type": "code",
+        "outputId": "8cee1309-ff96-4191-c786-ec0bfd863206",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        }
+      },
+      "source": [
+        "a = \"Program\"\n",
+        "print(a[2])\n",
+        "print(a[3:7])\n",
+        "str.islower(a)\n",
+        "\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "o\n",
+            "gram\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "False"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t54rTzzEG1Sc",
+        "colab_type": "code",
+        "outputId": "a11adaf3-6fb8-4b10-d14e-87d9c6f3f576",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "type(a)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "str"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cu0g_6BtSWZo",
+        "colab_type": "code",
+        "outputId": "090ff68c-4739-44c5-8e5d-f1925697ad38",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "firstname = \"Irene\"\n",
+        "lastname = \"Meniru\"\n",
+        "print(\"Hello\", firstname, lastname, \"!\", \"you just delved into python\")\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello Irene Meniru ! you just delved into python\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SGSjOwAbiueF",
+        "colab_type": "code",
+        "outputId": "72f4a7d9-0dfb-4934-cf0c-5a2d9976efda",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        }
+      },
+      "source": [
+        "fam = [1.73,1.62,1.89,1.99]\n",
+        "print(fam)\n",
+        "fam2 = [[\"Val\",1.73,\"Inno\",1.62,\"Irene\",1.89,\"David\",1.99]]\n",
+        "print(fam2)\n",
+        "type(fam)\n",
+        "type(fam2)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1.73, 1.62, 1.89, 1.99]\n",
+            "[['Val', 1.73, 'Inno', 1.62, 'Irene', 1.89, 'David', 1.99]]\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CLM0rR7-m-Kq",
+        "colab_type": "code",
+        "outputId": "4996a8b1-0aa2-438d-db29-6afd551a7fb1",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        }
+      },
+      "source": [
+        "fam3 = [\"Val\",1.73,\"Inno\",1.62,\"Irene\",1.89,\"David\",1.99]\n",
+        "print(fam3)\n",
+        "print(fam[-1])\n",
+        "print(fam[0])\n",
+        "print(fam3[-8])\n",
+        "fam3[3:]\n",
+        "fam3[2:6]\n",
+        "fam3[3] = 1.93\n",
+        "print(fam3)\n",
+        "fam3[0:2] = \"Valentine\", 1.88\n",
+        "print(fam3)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Val', 1.73, 'Inno', 1.62, 'Irene', 1.89, 'David', 1.99]\n",
+            "1.99\n",
+            "1.73\n",
+            "Val\n",
+            "['Val', 1.73, 'Inno', 1.93, 'Irene', 1.89, 'David', 1.99]\n",
+            "['Valentine', 1.88, 'Inno', 1.93, 'Irene', 1.89, 'David', 1.99]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mFpUM-TztzaQ",
+        "colab_type": "code",
+        "outputId": "2f603bb1-b172-4a58-9ea0-8669b4ee3d8f",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "fam_ext = fam3 + [\"Divine\",1.56]\n",
+        "print(fam_ext)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Valentine', 1.88, 'Inno', 1.93, 'Irene', 1.89, 'David', 1.99, 'Divine', 1.56]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pUXi42GouqtM",
+        "colab_type": "code",
+        "outputId": "cbf589f5-36f1-4888-c3f0-148c66e0463f",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "del(fam3[7])\n",
+        "print(fam3)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Valentine', 1.88, 'Inno', 1.93, 'Irene', 1.89, 'David']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "z2YUMHOUvNcB",
+        "colab_type": "code",
+        "outputId": "bba38acb-5667-4e07-862e-c1f8a94038c1",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "del(fam_ext[5])\n",
+        "print(fam_ext)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['Valentine', 1.88, 'Inno', 1.93, 'Irene', 'David', 1.99, 'Divine', 1.56]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cyf6YQo1x_5-",
+        "colab_type": "code",
+        "outputId": "881d24e6-6b0a-466c-997b-15784d17c631",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "x = [\"a\", \"b\", \"c\"]\n",
+        "y = x[:]\n",
+        "y[2] = \"d\"\n",
+        "print(y)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['a', 'b', 'd']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Xq6ekHNm3WlX",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "list1 = [10,20,[300,400,[5000,6000],500],30,40]"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hTcRWFKGKjHX",
+        "colab_type": "code",
+        "outputId": "7e02ac6a-ab3c-4f60-ef94-a99dab0f444c",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "print(36/4*(3+2)*4+2)\n",
+        "aTuple = (\"orange\")\n",
+        "print(type(aTuple))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "182.0\n",
+            "<class 'str'>\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QIQWqO9JMZDc",
+        "colab_type": "code",
+        "outputId": "4ac1fd1f-d2f5-471e-a925-4eb8cec31fd6",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "aTuple = \"yellow\", 20, \"red\"\n",
+        "a, b, c = aTuple\n",
+        "print(a)\n",
+        "print(b)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "yellow\n",
+            "20\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3zIDgwnLNEsO",
+        "colab_type": "code",
+        "outputId": "f5423f63-cdad-4804-9598-b8f89a842c7b",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        }
+      },
+      "source": [
+        "aList = [10, 20, 30, 40, 50, 60, 70, 80]\n",
+        "print(aList[2:5])\n",
+        "print(aList[:4])\n",
+        "print(aList[3:])"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[30, 40, 50]\n",
+            "[10, 20, 30, 40]\n",
+            "[40, 50, 60, 70, 80]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DKbNRm2gOQUy",
+        "colab_type": "code",
+        "outputId": "cf11851e-8aeb-4a51-f2db-8a93f677bd98",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "lst = [3, 4, 6, 1, 2]\n",
+        "lst[1:2] = [7, 8]\n",
+        "print(lst)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[3, 7, 8, 6, 1, 2]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "F9V9nI7uP1Zb",
+        "colab_type": "code",
+        "outputId": "3d7b9d4e-c87c-4636-f754-898e55727469",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "listOne = [\"a\", \"b\", \"c\", \"d\"]\n",
+        "listTwo = [\"e\", \"f\", \"g\"]\n",
+        "newList = listOne + listTwo\n",
+        "print(newList)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UWGY4WqEQ21A",
+        "colab_type": "code",
+        "outputId": "19d8a4bd-cb54-4db4-a4e6-d5539de98e14",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "listOne = [\"a\", \"b\", \"c\", \"d\"]\n",
+        "listTwo = [\"e\", \"f\", \"g\"]\n",
+        "listOne.extend(listTwo)\n",
+        "print(listOne)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['a', 'b', 'c', 'd', 'e', 'f', 'g']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nC6Sr6pXVyvE",
+        "colab_type": "code",
+        "outputId": "83200228-de5b-4c7d-a675-307ecfbca5a5",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        }
+      },
+      "source": [
+        "pets = [\"cats\", \"dogs\", \"rabbits\", \"hamsters\"]\n",
+        "for myPets in pets:\n",
+        " print(myPets)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "cats\n",
+            "dogs\n",
+            "rabbits\n",
+            "hamsters\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KbT_YRlDbwKM",
+        "colab_type": "code",
+        "outputId": "592db869-abe0-4778-d1bb-37f9e9807464",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "x = range(1,5)\n",
+        "total = 0\n",
+        "for n in x:\n",
+        "  total = total + n\n",
+        "print(total)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_idHyzjCiGmB",
+        "colab_type": "code",
+        "outputId": "607f20ba-ea3e-4174-dbaf-444eb61c5e0d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "c = list(range(2,20))\n",
+        "total2 = 0\n",
+        "for z in range(2,20):\n",
+        "  total2 = total2 + z\n",
+        "print(total2)\n",
+        "print(c)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "189\n",
+            "[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "iV54E856le3u",
+        "colab_type": "code",
+        "outputId": "ec6a0569-3859-46ff-bb27-88c1146ec18b",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "d = list(range (1,100))\n",
+        "total3 = 0\n",
+        "for i in range(1,100):\n",
+        " if i % 3 == 0:\n",
+        "  total3 += i\n",
+        "print(total3)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1683\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TvhZ_4mHtdNJ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        },
+        "outputId": "a7cb9b23-5e5a-4a72-c582-0f709a9b7284"
+      },
+      "source": [
+        "w = \"family\"\n",
+        "for c in \"family\":\n",
+        "  print(c.capitalize())\n"
+      ],
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "F\n",
+            "A\n",
+            "M\n",
+            "I\n",
+            "L\n",
+            "Y\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
